@@ -3,48 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Tech Goals</title>
+  <title>Profile Card</title>
   <link rel="stylesheet" href="style.css">
   <script defer src="script.js"></script>
 </head>
 <body>
   <div class="container">
-    <header>
-      <h1 data-testid="pageTitle">My Tech Goals for the Next 2 Years</h1>
-    </header>
-    
-    <section class="profile">
+    <div class="profile-card">
       <div class="profile-img">
-        <img src="./images/Handsome monkey.jpg" alt="Slack Profile Picture" data-testid="slackProfilePicture">
+        <img src="./images/Handsome monkey.jpg" alt="Profile Picture" data-testid="profilePicture">
       </div>
-      <h2 data-testid="slackDisplayName">MATIC</h2>
-      <p data-testid="slackEmail">Bigpicturematic@gmail.com</p>
-    </section>
-    
-    <section class="current-info">
-      <p data-testid="currentTimeUTC">Current Time (UTC): <span id="time">Loading...</span></p>
-      <p data-testid="currentDay">Current Day: <span id="day">Loading...</span></p>
-    </section>
+      <div class="profile-info">
+        <h2 data-testid="fullName">Olaitan Quadri</h2>
+        <p class="job-title" data-testid="jobTitle">Next.js Developer</p>
+        <p data-testid="emailAddress" class="email">Bigpicturematic@gmail.com</p>
+        <p data-testid="shortBio" class="bio">
+          Passionate Full-Stack Developer with experience in web technologies, UI/UX design, and AI advancements.  
+          I build scalable and user-friendly applications.
+        </p>
+        <p class="location" data-testid="currentLocation">📍 Osun, Nigeria</p>
+      </div>
 
-    <section class="goals">
-      <h3>My Goals</h3>
-      <ul>
-        <li>Expand my knowledge in web development and stay updated with the latest trends.</li>
-        <li>Transition to mobile app development and achieve a senior developer role.</li>
-        <li>Contribute to Open Source Projects.</li>
-        <li>Enhance my skills in UI/UX design to create exceptional user interfaces.</li>
-        <li>Explore advancements in AI technology.</li>
-      </ul>
-    </section>
-    
-    <section class="links">
-      <h3>Useful Links</h3>
-      <ul>
-        <li><a href="https://hng.tech/learn" data-testid="hngLink" target="_blank" rel="noopener noreferrer">HNG Learn</a></li>
-        <li><a href="https://keyword.dog" data-testid="keywordLink" target="_blank" rel="noopener noreferrer">Keyword Dog</a></li>
-        <li><a href="https://scrapeanyweb.site" data-testid="scrapeanywebLink" target="_blank" rel="noopener noreferrer">Scrape Any Web</a></li>
-      </ul>
-    </section>
+      <div class="current-info">
+        <p data-testid="currentTimeUTC">Current Time (UTC): <span id="time">Loading...</span></p>
+      </div>
+
+      <div class="links">
+        <h3>Social Links</h3>
+        <ul>
+          <li><a href="https://github.com/maticmania" target="_blank">GitHub</a></li>
+          <li><a href="https://twitter.com/olaitanquadri" target="_blank">Twitter</a></li>
+        </ul>
+      </div>
+    </div>
   </div>
 </body>
 </html>
